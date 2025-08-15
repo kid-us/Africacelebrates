@@ -2,12 +2,12 @@ import SectionTitle from "../SectionTitle";
 
 const AboutUs = () => {
   return (
-    <div className="flex items-center justify-center py-10 px-6">
+    <div className="flex items-center justify-center py-10">
       <div className="max-w-6xl w-full">
-       <SectionTitle label={"About Us"} />
+        <SectionTitle label={"About Us"} />
 
         {/* Content */}
-        <div>
+        <div className="px-5 lg:px-0">
           <p>
             Convene for Impact Event Organization PLC, in partnership with
             Legendary Gold Limited (put website link) organizes Africa
@@ -35,7 +35,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="flex mt-6 space-x-10">
+        <div className="lg:flex mt-6 lg:space-x-10 space-y-4 px-5 lg:px-0">
           <p>
             Website:{" "}
             <a

@@ -42,15 +42,17 @@ const About = () => {
   return (
     <div id="#About" className="flex items-center justify-center">
       <div className="max-w-6xl">
-        <div className="flex py-10 gap-x-10">
+        <div className="lg:flex py-10 lg:gap-x-10">
           <div>
             <SectionTitle label={"About the Event"} />
-            <p className="w-90 text-3xl mt-16">The Event Explained</p>
-            <div className="flex items-end">
+            <p className="w-90 text-3xl lg:mt-16 px-5 lg:px-0 lg:mb-0 mb-5">
+              The Event Explained
+            </p>
+            <div className="lg:flex hidden items-end">
               <img src={logo} className="grayscale-100 w-1/3 mt-6" />
             </div>
           </div>
-          <div>
+          <div className="px-5 lg:px-0">
             <p className="">
               Africa Celebrates 2025 Women’s Forum is one of the components of
               Africa Celebrates 2025 (www.africacelebrates.com). This year’s
@@ -75,10 +77,10 @@ const About = () => {
         </div>
 
         {/* Forum Objectives */}
-        <div className="my-20">
+        <div className="my-20 px-5">
           <SectionTitle label={"Forum Objectives"} />
 
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-3 gap-6">
             {forumObjective.map((objective) => (
               <div
                 key={objective.id}

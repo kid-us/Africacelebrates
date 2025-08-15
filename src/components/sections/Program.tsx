@@ -3,11 +3,11 @@ import SectionTitle from "../SectionTitle";
 
 export default function Program() {
   return (
-    <div id="#Program" className="flex items-center justify-center py-10 px-6">
-      <div className="max-w-6xl w-full">
+    <div id="#Program" className="flex items-center justify-center py-10">
+      <div className="lg:max-w-6xl w-full">
         <SectionTitle label="Program Schedule" />
 
-        <div>
+        <div className="px-5 lg:px-0">
           {programSchedule.map((item, index) => (
             <div key={item.id} className="flex gap-x-3 relative">
               {/* Time */}

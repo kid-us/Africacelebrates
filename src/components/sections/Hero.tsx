@@ -2,14 +2,14 @@ const Hero = () => {
   return (
     <div id="#Home" className="container mx-auto">
       <div className="flex flex-col items-center justify-center h-[100dvh]">
-        <div className="w-2xl">
-          <p className="text-primary text-6xl uppercase font-bold text-center">
+        <div className="lg:w-2xl lg:px-0 px-5">
+          <p className="text-primary lg:text-6xl text-4xl uppercase font-bold text-center">
             Africa Celebrates Women’s Forum 2025
           </p>
           <p className="text-xl font-semibold mt-5 text-center">
             5 November 2025
           </p>
-          <p className="text-2xl font-semibold text-zinc-400 text-center">
+          <p className="lg:text-2xl text-xl font-semibold text-zinc-400 text-center">
             United Nations Conference Centre in Addis Ababa (UNCC-AA)
           </p>
           <div className="mt-10 flex justify-center">

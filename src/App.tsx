@@ -43,7 +43,7 @@ function App() {
 
       {/* Banner */}
       <div className="flex items-center justify-center my-10">
-        <img src={banner} alt="Celebrate Africa" />
+        <img src={banner} alt="Celebrate Africa" className="lg:w-auto w-68" />
       </div>
 
       {/* About US */}

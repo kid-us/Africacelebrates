@@ -67,7 +67,7 @@ const Marquee = () => {
   ];
 
   return (
-    <div id="#Gallery" className="flex items-center justify-center py-10 px-6">
+    <div id="#Gallery" className="flex items-center justify-center py-10 ">
       <div className="max-w-6xl w-full">
         <SectionTitle label="Our Gallery" />
         {/* Forward Marquee */}
@@ -85,7 +85,11 @@ const Marquee = () => {
                 className="marquee-item"
                 style={{ "--item-position": t.id } as React.CSSProperties}
               >
-                <img src={t.img} className="h-full" alt={`Gallery - ${t.id}`} />
+                <img
+                  src={t.img}
+                  className="lg:h-full "
+                  alt={`Gallery - ${t.id}`}
+                />
               </div>
             ))}
           </div>
