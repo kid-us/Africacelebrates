@@ -5,12 +5,16 @@ import heroImg from "./assets/hero.webp";
 import About from "./components/About";
 import Program from "./components/Program";
 import Marquee from "./components/Marquee";
+import { banner } from "./assets";
 
 function App() {
   return (
     <>
-      {/* NAvbar and HEro */}
       <div className="relative w-full h-screen">
+        {/* Sticky Navbar */}
+        <div className="fixed w-full top-0 z-50 backdrop-blur-sm">
+          <Navbar />
+        </div>
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -18,25 +22,27 @@ function App() {
         />
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/93"></div>
+        <div className="absolute inset-0 z-10 bg-black/90"></div>
 
-        {/* Content */}
-        <div className="relative z-10">
-          <div className="sticky top-0 backdrop-blur-2xl">
-            <Navbar />
-          </div>
+        {/* Hero Content */}
+        <div className="relative z-10 pt-12">
           <Hero />
         </div>
       </div>
 
-      {/* About */}
+      {/* About Section */}
       <About />
 
-      {/* Program */}
+      {/* Program Section */}
       <Program />
 
-      {/* Gallery */}
+      {/* Gallery Section */}
       <Marquee />
+
+      {/* Logo */}
+      <div className="flex items-center justify-center my-10">
+        <img src={banner} alt="Celebrate Africa" />
+      </div>
     </>
   );
 }

@@ -10,13 +10,18 @@ const Navbar = () => {
       {/* Navigation */}
       <div className="flex space-x-10">
         {nav.map((n, idx) => (
-          <a
+          <button
             key={idx}
-            href={n.path}
+            onClick={() => {
+              const aboutSection = document.getElementById(n.path);
+              if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="text-zinc-400 hover:text-primary hover:-translate-y-1 hover:uppercase transition-all duration-300 text-sm w-12"
           >
             {n.label}
-          </a>
+          </button>
         ))}
       </div>
 
