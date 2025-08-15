@@ -24,7 +24,7 @@ function App() {
         />
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 z-10 bg-black/95"></div>
+        <div className="absolute inset-0 z-10 lg:bg-black/95 bg-black/80"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 pt-12">
