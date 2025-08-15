@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="container mx-auto">
+    <div id="#Home" className="container mx-auto">
       <div className="flex flex-col items-center justify-center h-[100dvh]">
         <div className="w-2xl">
           <p className="text-primary text-6xl uppercase font-bold text-center">
@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="mt-10 flex justify-center">
             <a
               href="https://owlevents.app/rsvp/?code=q4Mevgr6p9ah"
-              className="flex items-center justify-center text-black text-sm font-semibold border border-secondary rounded-full w-60 h-12 bg-secondary transition-colors duration-300 hover:bg-secondary/80"
+              className="flex items-center justify-center text-black font-semibold border border-secondary rounded-full w-60 h-12 bg-secondary transition-colors duration-300 hover:bg-secondary/60"
             >
               Register Now
             </a>
