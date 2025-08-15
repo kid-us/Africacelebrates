@@ -12,6 +12,7 @@ import {
   nine,
   ten,
 } from "@/assets";
+import SectionTitle from "../SectionTitle";
 
 interface Testimony {
   id: number;
@@ -68,9 +69,7 @@ const Marquee = () => {
   return (
     <div id="#Gallery" className="flex items-center justify-center py-10 px-6">
       <div className="max-w-6xl w-full">
-        <p className="border border-primary rounded-full px-4 py-2 w-52 text-center text-white bg-secondary/10 mb-10">
-          Our Gallery
-        </p>
+        <SectionTitle label="Our Gallery" />
         {/* Forward Marquee */}
         <div
           className="marquee fadeout-horizontal"

@@ -1,4 +1,5 @@
 import { logo } from "@/assets";
+import SectionTitle from "../SectionTitle";
 
 interface ForumObjective {
   id: number;
@@ -42,13 +43,11 @@ const About = () => {
     <div id="#About" className="flex items-center justify-center">
       <div className="max-w-6xl">
         <div className="flex py-10 gap-x-10">
-          <div className="">
-            <p className="border border-primary rounded-full px-4 py-2 w-52 text-center text-white bg-secondary/10 mb-7">
-              About the Event
-            </p>
+          <div>
+            <SectionTitle label={"About the Event"} />
             <p className="w-90 text-3xl mt-16">The Event Explained</p>
             <div className="flex items-end">
-              <img src={logo} className="grayscale-100 w-1/2 mt-10" />
+              <img src={logo} className="grayscale-100 w-1/3 mt-6" />
             </div>
           </div>
           <div>
@@ -77,15 +76,13 @@ const About = () => {
 
         {/* Forum Objectives */}
         <div className="my-20">
-          <p className="border border-primary rounded-full px-4 py-2 w-52 text-center text-white bg-secondary/10 mb-10">
-            Forum Objectives
-          </p>
+          <SectionTitle label={"Forum Objectives"} />
 
           <div className="grid grid-cols-3 gap-6">
             {forumObjective.map((objective) => (
               <div
                 key={objective.id}
-                className="border border-secondary p-5 group rounded relative"
+                className="border border-secondary p-5 group rounded relative hover:bg-primary/80 hover:text-black transition-all duration-400"
               >
                 <p className="bg-secondary w-2 h-2 absolute rounded-full -top-1 -left-1"></p>
                 <p className="bg-secondary w-2 h-2 absolute rounded-full -top-1 -right-1"></p>
@@ -96,12 +93,12 @@ const About = () => {
             ))}
           </div>
 
-          <div className="flex justify-end mt-5">
+          <div className="flex mt-5">
             <p>
               Wanna be part of it{" "}
               <a
                 href=""
-                className="text-lg text-primary underline underline-offset-4 hover:underline-offset-2 ms-3"
+                className="text-lg text-primary underline underline-offset-4 hover:underline-offset-2 ms-3 uppercase font-semibold"
               >
                 Register Now
               </a>

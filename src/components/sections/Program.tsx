@@ -1,12 +1,12 @@
 import { programSchedule } from "@/constants/program";
+import SectionTitle from "../SectionTitle";
 
 export default function Program() {
   return (
     <div id="#Program" className="flex items-center justify-center py-10 px-6">
       <div className="max-w-6xl w-full">
-        <p className="border border-primary rounded-full px-4 py-2 w-52 text-center text-white bg-secondary/10 mb-10">
-          Program Schedule
-        </p>
+        <SectionTitle label="Program Schedule" />
+
         <div>
           {programSchedule.map((item, index) => (
             <div key={item.id} className="flex gap-x-3 relative">
