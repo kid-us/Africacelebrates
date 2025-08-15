@@ -1,21 +1,25 @@
 const Hero = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col items-center justify-center h-[90dvh]">
-        <p className="text-primary text-6xl uppercase font-bold w-2xl  text-center">
-          Africa Celebrates Women’s Forum 2025
-        </p>
-        <p className="text-xl my-3">5 November 2025</p>
-        <p className="text-lg">
-          United Nations Conference Centre in Addis Ababa (UNCC-AA)
-        </p>
-        <div className="mt-10">
-          <a
-            href="https://owlevents.app/rsvp/?code=q4Mevgr6p9ah"
-            className="flex items-center justify-center text-black text-sm font-semibold border border-secondary rounded w-52 h-11 bg-secondary transition-colors duration-300 ring ring-primary hover:bg-secondary/80"
-          >
-            Register Now
-          </a>
+      <div className="flex flex-col items-center justify-center h-[100dvh]">
+        <div className="w-2xl">
+          <p className="text-primary text-6xl uppercase font-bold text-center">
+            Africa Celebrates Women’s Forum 2025
+          </p>
+          <p className="text-xl font-semibold mt-5 text-center">
+            5 November 2025
+          </p>
+          <p className="text-2xl font-semibold text-zinc-400 text-center">
+            United Nations Conference Centre in Addis Ababa (UNCC-AA)
+          </p>
+          <div className="mt-10 flex justify-center">
+            <a
+              href="https://owlevents.app/rsvp/?code=q4Mevgr6p9ah"
+              className="flex items-center justify-center text-black text-sm font-semibold border border-secondary rounded-full w-60 h-12 bg-secondary transition-colors duration-300 hover:bg-secondary/80"
+            >
+              Register Now
+            </a>
+          </div>
         </div>
       </div>
     </div>

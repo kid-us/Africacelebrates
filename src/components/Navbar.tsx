@@ -23,7 +23,7 @@ const Navbar = () => {
       {/* Register Now */}
       <a
         href="https://owlevents.app/rsvp/?code=q4Mevgr6p9ah"
-        className="flex items-center justify-center text-zinc-300 border border-secondary rounded-full w-40 h-10 bg-transparent hover:text-white hover:bg-secondary transition-colors duration-300 ring ring-secondary"
+        className="flex items-center justify-center text-zinc-300 border border-secondary rounded-full w-40 h-10 bg-transparent hover:text-black font-semibold hover:bg-secondary transition-colors duration-300 ring ring-secondary"
       >
         Register Now
       </a>
