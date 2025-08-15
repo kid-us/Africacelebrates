@@ -99,7 +99,7 @@ const About = () => {
             <p>
               Wanna be part of it{" "}
               <a
-                href=""
+                href="https://owlevents.app/rsvp/?code=q4Mevgr6p9ah"
                 className="text-lg text-primary underline underline-offset-4 hover:underline-offset-2 ms-3 uppercase font-semibold"
               >
                 Register Now

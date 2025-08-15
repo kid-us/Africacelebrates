@@ -87,7 +87,7 @@ const Marquee = () => {
               >
                 <img
                   src={t.img}
-                  className="lg:h-full "
+                  className="h-full "
                   alt={`Gallery - ${t.id}`}
                 />
               </div>
