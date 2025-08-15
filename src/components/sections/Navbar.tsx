@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="lg:max-w-4xl lg:px-0 px-5 lg:py-0 mx-auto flex justify-between items-center relative z-50">
+    <nav className="lg:max-w-4xl lg:px-0 px-5 lg:py-0 py-1 mx-auto flex justify-between items-center relative z-50">
       {/* Logo */}
       <img src={logo} alt="Logo" className="md:w-28 w-24 z-50" />
 
