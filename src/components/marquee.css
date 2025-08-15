@@ -19,15 +19,18 @@
 
 .marquee-item {
   width: var(--item-width);
-  border: 1px solid #fff;
-  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--secondary);
   color: #fff;
   border-radius: 0.5rem;
-  padding: 30px 15px;
+  padding: 5px;
   grid-area: resting;
   animation: marquee-move var(--speed) linear infinite
     var(--direction, forwards);
   animation-delay: calc(var(--single-slide-speed) * var(--item-position) * -1);
+}
+
+.marquee-item:hover {
+  filter: grayscale();
 }
 
 @keyframes marquee-move {

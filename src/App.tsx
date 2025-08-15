@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import heroImg from "./assets/hero.webp";
 import About from "./components/About";
 import Program from "./components/Program";
+import Marquee from "./components/Marquee";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
 
       {/* Program */}
       <Program />
+
+      {/* Gallery */}
+      <Marquee />
     </>
   );
 }
