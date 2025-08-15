@@ -93,18 +93,8 @@ const Navbar = () => {
 
       {/* Register Now */}
       <a
-       const SectionTitle = ({ label }: { label: string }) => {
-  return (
-    <p className="border border-primary/20 rounded-full px-4 py-2 w-52 text-center bg-secondary/8 mb-10 mx-5 lg:mx-0
-      bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-      {label}
-    </p>
-  );
-};
-
-export default SectionTitle;
-
-        className="lg:flex hidden items-center justify-center text-zinc-300 border border-secondary rounded-full w-40 h-10 bg-transparent hover:text-black font-semibold hover:bg-secondary transition-colors duration-300 ring ring-secondary"
+        href="https://owlevents.app/rsvp/?code=q4Mevgr6p9ah"
+        className="lg:flex hidden items-center justify-center border border-secondary rounded-full w-40 h-9 hover:text-black font-semibold hover:bg-secondary transition-colors duration-300 ring ring-secondary"
       >
         Register Now
       </a>

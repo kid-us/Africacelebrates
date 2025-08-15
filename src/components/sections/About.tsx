@@ -1,4 +1,3 @@
-import { logo } from "@/assets";
 import SectionTitle from "../SectionTitle";
 
 interface ForumObjective {
@@ -45,12 +44,9 @@ const About = () => {
         <div className="lg:flex py-10 lg:gap-x-10">
           <div>
             <SectionTitle label={"About the Event"} />
-            <p className="w-90 text-3xl lg:mt-16 px-5 lg:px-0 lg:mb-0 mb-5">
+            <p className="w-90 text-3xl lg:mt-5 px-5 lg:px-0 lg:mb-0 mb-5">
               The Event Explained
             </p>
-            <div className="lg:flex hidden items-end">
-              <img src={logo} className="grayscale-100 w-1/3 mt-6" />
-            </div>
           </div>
           <div className="px-5 lg:px-0">
             <p className="">
