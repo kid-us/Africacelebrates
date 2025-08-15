@@ -43,7 +43,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: #000000;
+  --background: #0f0f0f;
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
@@ -116,7 +116,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-white;
   }
 
   button {

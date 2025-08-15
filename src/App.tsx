@@ -1,11 +1,27 @@
 import "./App.css";
-
-import { Button } from "@/components/ui/button";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import heroImg from "./assets/hero.webp";
 
 function App() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button>Click me</Button>
+    <div className="relative w-full h-screen">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroImg})` }}
+      />
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/93"></div>
+
+      {/* Content */}
+      <div className="relative z-10">
+        <div className="sticky top-0 backdrop-blur-2xl">
+          <Navbar />
+        </div>
+        <Hero />
+      </div>
     </div>
   );
 }
