@@ -11,7 +11,7 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false); // Close modal after clicking
+      setIsOpen(false);
     }
   };
 
