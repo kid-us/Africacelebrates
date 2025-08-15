@@ -1,3 +1,5 @@
+import { logo } from "@/assets";
+
 interface ForumObjective {
   id: number;
   description: string;
@@ -44,10 +46,13 @@ const About = () => {
             <p className="border border-primary rounded-full px-4 py-2 w-52 text-center text-white bg-secondary/10 mb-7">
               About the Event
             </p>
-            <p className="w-90 text-3xl">The Event Explained</p>
+            <p className="w-90 text-3xl mt-16">The Event Explained</p>
+            <div className="flex items-end">
+              <img src={logo} className="grayscale-100 w-1/2 mt-10" />
+            </div>
           </div>
           <div>
-            <p className="text-xl">
+            <p className="">
               Africa Celebrates 2025 Women’s Forum is one of the components of
               Africa Celebrates 2025 (www.africacelebrates.com). This year’s
               forum focuses on the theme:
@@ -57,7 +62,7 @@ const About = () => {
               in Reparations Restoring What Was Taken, Building What is
               Possible”
             </p>
-            <p className="text-xl">
+            <p className="">
               Reparations span cultural, psychological, historical, land, and
               institutional restoration. For African women, it means a holistic
               effort to acknowledge past harms, dismantle ongoing oppression,
