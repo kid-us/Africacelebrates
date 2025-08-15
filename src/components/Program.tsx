@@ -1,36 +1,54 @@
+import { programSchedule } from "@/constants/program";
+
 export default function Program() {
-  const schedule = [
-    { time: "09:00 AM", label: "Registration & Welcome Coffee" },
-    { time: "10:00 AM", label: "Opening Keynote" },
-    { time: "11:30 AM", label: "Tech Innovations Session" },
-    { time: "01:00 PM", label: "Networking Lunch" },
-    { time: "02:30 PM", label: "Panel Discussion" },
-  ];
-
   return (
-    <div className="max-w-5xl">
-      <div className="flex justify-center">
-        <div className="relative">
-          {schedule.map((item, index) => (
-            <div className="grid grid-cols-3">
-              <time className="block mb-2 text-sm font-semibold text-gray-300">
-                {item.time}
-              </time>
-
-              {/* Dot */}
-              <div className="relative">
-                <p className="absolute left-5 flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full -start-3 ring-8 ring-black">
-                  <span className="w-2.5 h-2.5 bg-black rounded-full"></span>
-                </p>
+    <div className="flex items-center justify-center py-10 px-6">
+      <div className="max-w-6xl w-full">
+        <p className="border border-primary rounded-full px-4 py-2 w-52 text-center text-white bg-secondary/10 mb-10">
+          Program Schedule
+        </p>
+        <div>
+          {programSchedule.map((item, index) => (
+            <div key={item.id} className="flex gap-x-3 relative">
+              {/* Time */}
+              <div className="min-w-[80px] text-end mt-1">
+                <span className="text-xs text-white">{item.time}</span>
               </div>
-              <div
-                key={index}
-                className="relative border-s border-gray-700 grid grid-cols-2 mb-10 ms-6"
-              >
-                {/* Label */}
-                <p className="ms-20 text-base font-normal text-gray-400">
+
+              {/* Dot + Line */}
+              <div className="relative flex flex-col items-center mt-2">
+                <div className="relative z-10 w-4 h-4 rounded-full bg-primary"></div>
+                {index < programSchedule.length - 1 && (
+                  <div className="w-px flex-1 bg-secondary mt-0.5"></div>
+                )}
+              </div>
+
+              {/* Label & Description */}
+              <div className="grow pt-0.5 pb-8">
+                <h3 className="font-semibold text-white text-lg">
                   {item.label}
-                </p>
+                </h3>
+                {item.desc && <p className="mt-1 text-gray-400">{item.desc}</p>}
+                {item.desc2 && (
+                  <p className="mt-1 text-gray-400">{item.desc2}</p>
+                )}
+
+                {/* Sub-items */}
+                {item.subItems &&
+                  item.subItems.map((sub, subIndex) => (
+                    <div
+                      key={subIndex}
+                      className="mt-2 pl-4 border-l border-secondary"
+                    >
+                      <p className="text-white font-semibold">{sub.name}</p>
+                      {sub.era && (
+                        <p className="text-secondary text-sm">
+                          {sub.era} | {sub.region}
+                        </p>
+                      )}
+                      <p className="text-gray-400 text-sm">{sub.details}</p>
+                    </div>
+                  ))}
               </div>
             </div>
           ))}
