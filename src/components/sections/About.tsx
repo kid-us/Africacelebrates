@@ -48,16 +48,24 @@ const About = () => {
               The Event Explained
             </p>
           </div>
-          <div className="px-5 lg:px-0">
+          <div className="px-5 lg:px-0 text-justify">
             <p className="">
               Africa Celebrates 2025 Women’s Forum is one of the components of
-              Africa Celebrates 2025 (www.africacelebrates.com). This year’s
-              forum focuses on the theme:
+              Africa Celebrates 2025{" "}
+              <a
+                href="www.africacelebrates.com"
+                className="text-secondary underline font-semibold"
+              >
+                africacelebrates
+              </a>
+              . This year’s forum focuses on the theme:
             </p>
             <p className="italic font-semibold my-4 text-primary text-xl">
-              “Storytelling for Justice: The Power of African Women Narratives
-              in Reparations Restoring What Was Taken, Building What is
-              Possible”
+              Storytelling for Justice: The Power of African Women Narratives in
+              Reparations{" "}
+              <span className="text-white">
+                “Restoring What Was Taken, Building What is Possible”
+              </span>
             </p>
             <p className="">
               Reparations span cultural, psychological, historical, land, and
@@ -89,18 +97,6 @@ const About = () => {
                 <p className="text-lg">{objective.description}</p>
               </div>
             ))}
-          </div>
-
-          <div className="flex mt-5">
-            <p>
-              Wanna be part of it{" "}
-              <a
-                href="https://owlevents.app/rsvp/?code=q4Mevgr6p9ah"
-                className="text-lg text-primary underline underline-offset-4 hover:underline-offset-2 ms-3 uppercase font-semibold"
-              >
-                Register Now
-              </a>
-            </p>
           </div>
         </div>
       </div>

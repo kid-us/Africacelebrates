@@ -1,3 +1,4 @@
+import { Globe, Mail } from "lucide-react";
 import SectionTitle from "../SectionTitle";
 
 const AboutUs = () => {
@@ -7,14 +8,14 @@ const AboutUs = () => {
         <SectionTitle label={"About Us"} />
 
         {/* Content */}
-        <div className="px-5 lg:px-0">
+        <div className="px-5 lg:px-0 text-justify">
           <p>
             Convene for Impact Event Organization PLC, in partnership with
-            Legendary Gold Limited (put website link) organizes Africa
-            Celebrates 2025 Women’s Forum.
+            Legendary Gold Limited curates and organizes Africa Celebrates 2025
+            Women’s Forum.
           </p>
 
-          <p className="mt-5">
+          <p className="mt-5 text-justify">
             Convene for Impact Event Organization PLC is a premier business
             event management company that specializes in delivering first-class
             solutions through a unique and professional approach. The company
@@ -37,21 +38,19 @@ const AboutUs = () => {
 
         <div className="lg:flex mt-6 lg:space-x-10 space-y-4 px-5 lg:px-0">
           <p>
-            Website:{" "}
             <a
               href="https://www.conveneforimpact.com"
               className="text-secondary underline"
             >
-              www.conveneforimpact.com
+              <Globe />
             </a>
           </p>
           <p>
-            Email:{" "}
             <a
               href="mailto:info@conveneforimpact.com"
               className="text-secondary underline"
             >
-              info@conveneforimpact.com
+              <Mail />
             </a>
           </p>
         </div>

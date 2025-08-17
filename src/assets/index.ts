@@ -1,6 +1,7 @@
 import logo from "./logo.png";
 import banner from "./banner.png";
-import hero from "./hero.webp";
+import hero from "./hero.jpg";
+import conveneLogo from "./convene_logo.png";
 
 // Gallery
 
@@ -19,6 +20,7 @@ export {
   logo,
   banner,
   hero,
+  conveneLogo,
 
   // Gallery
   one,

@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <div id="#Home" className="container mx-auto">
       <div className="flex flex-col items-center justify-center h-[100dvh]">
-        <div className="lg:w-2xl lg:px-0 px-5">
+        <div className="lg:w-3xl lg:px-0 px-5">
           <p className="text-primary lg:text-6xl text-4xl uppercase font-bold text-center">
             Africa Celebrates Women’s Forum 2025
           </p>
