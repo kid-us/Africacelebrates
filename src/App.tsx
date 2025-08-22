@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="relative w-full h-screen">
         {/* Navbar */}
-        <div className="fixed w-full top-0 z-50 backdrop-blur-sm">
+        <div className="fixed w-full top-0 z-50 backdrop-blur-xl">
           <Navbar />
         </div>
 
@@ -23,7 +23,7 @@ function App() {
         />
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 z-10 lg:bg-black/85 bg-black/85"></div>
+        <div className="absolute inset-0 z-10 bg-black/35"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 pt-12">

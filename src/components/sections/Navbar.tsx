@@ -26,7 +26,7 @@ const Navbar = () => {
           <button
             key={idx}
             onClick={() => handleScroll(n.path)}
-            className="text-zinc-400 hover:text-primary hover:-translate-y-1 hover:uppercase transition-all duration-300 text-sm w-12"
+            className="text-white hover:text-primary hover:-translate-y-1 hover:uppercase transition-all duration-300 text-sm w-12"
           >
             {n.label}
           </button>

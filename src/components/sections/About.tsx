@@ -53,7 +53,7 @@ const About = () => {
               Africa Celebrates 2025 Women’s Forum is one of the components of
               Africa Celebrates 2025{" "}
               <a
-                href="www.africacelebrates.com"
+                href="https://africacelebrates.com"
                 className="text-secondary underline font-semibold"
               >
                 africacelebrates
@@ -64,7 +64,7 @@ const About = () => {
               Storytelling for Justice: The Power of African Women Narratives in
               Reparations{" "}
               <span className="text-white">
-                “Restoring What Was Taken, Building What is Possible”
+                Restoring What Was Taken, Building What is Possible
               </span>
             </p>
             <p className="">
