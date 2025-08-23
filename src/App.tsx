@@ -6,6 +6,7 @@ import Program from "./components/sections/Program";
 import Marquee from "./components/sections/Marquee";
 import { banner, conveneLogo, hero } from "./assets";
 import AboutUs from "./components/sections/AboutUs";
+import Video from "./components/sections/Video";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Hero />
         </div>
       </div>
+
+      <Video />
 
       {/* About Section */}
       <About />
