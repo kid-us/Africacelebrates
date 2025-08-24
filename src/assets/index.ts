@@ -1,7 +1,7 @@
 import logo from "./logo.png";
 import banner from "./banner.png";
-import hero from "./hero.jpg";
-import conveneLogo from "./convene_logo.png";
+import hero from "./hero.png";
+import conveneLogo from "./convene_logo.jpg";
 
 // Gallery
 

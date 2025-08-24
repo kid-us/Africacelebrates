@@ -1,5 +1,3 @@
-import { conveneLogo } from "@/assets";
-
 const Hero = () => {
   return (
     <div id="#Home" className="container mx-auto">
@@ -22,14 +20,6 @@ const Hero = () => {
               Register Now
             </a>
           </div>
-        </div>
-        {/*  */}
-        <div className="absolute bottom-16 flex justify-center mt-40">
-          <img
-            src={conveneLogo}
-            alt="Convene Logo"
-            className="lg:w-28 w-22 rounded lg:mt-10 mt-7"
-          />
         </div>
       </div>
     </div>

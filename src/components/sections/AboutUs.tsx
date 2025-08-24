@@ -31,12 +31,11 @@ const AboutUs = () => {
             clients like the African Youth Development and Excellence Centre
             (AYDEC), GFOX Aviation, Normanas Aerospace, etc, through curating
             seamless business events such as the Pan-African Youth Summit 2022,
-            Stock-Talk Series, African Celebrates Women’s Forum 2024, Ethiopian
-            Aviation Forum 2025, etc.
+            Stock-Talk Series, African Celebrates Women’s Forum 2024, etc.
           </p>
         </div>
 
-        <div className="lg:flex mt-6 lg:space-x-10 space-y-4 px-5 lg:px-0">
+        <div className="flex mt-6 space-x-10 space-y-4 px-5 lg:px-0">
           <p>
             <a
               href="https://www.conveneforimpact.com"

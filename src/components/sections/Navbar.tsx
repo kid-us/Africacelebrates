@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { logo } from "@/assets";
+import { conveneLogo, logo } from "@/assets";
 import { nav } from "@/constants/nav";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
@@ -18,7 +18,14 @@ const Navbar = () => {
   return (
     <nav className="lg:max-w-4xl lg:px-0 px-5 lg:py-0 py-1 mx-auto flex justify-between items-center relative z-50">
       {/* Logo */}
-      <img src={logo} alt="Logo" className="w-28 z-50" />
+      <div className="flex items-center lg:space-x-10 space-x-4">
+        <img src={logo} alt="Logo" className="w-28 z-50" />
+        <img
+          src={conveneLogo}
+          alt="Convene Logo"
+          className="w-28 rounded mt-2"
+        />
+      </div>
 
       {/* Desktop Navigation */}
       <div className="lg:flex hidden space-x-10">
